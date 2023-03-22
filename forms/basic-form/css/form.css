@@ -1,71 +1,72 @@
 @charset "ISO-8859-1";
 
-
 /* form styling */
 
-
 #wrapper {
-	width: 60%;
-	margin-left:4%;
+  width: 60%;
+  margin-left: 4%;
 }
 
 div#formcol1 {
-	
-	float:left;	
-	width: 100%;
+  float: left;
+  width: 100%;
 }
 
 div#formcol1 label {
-	float:left;
-	width:8.3em;
-	text-align:left;
-	display:block;
-	padding-right:.3em;	
-	background:#E0E0DD;
-	clear:right;
-	}
-	
+  float: left;
+  margin-right: 0.3em;
+  width: 6.3em;
+  text-align: right;
+  display: inline-block;
+  padding-right: 0.3em;
+  clear: right;
+}
 
 div#formcol1 ul li {
-	list-style-type:none;
-	margin-left:-2em;
-	margin-bottom:.4em;
-	}
+  list-style-type: none;
+  margin-left: -2em;
+  margin-bottom: 0.4em;
+}
 
-	
 div#formcol1 input {
-	
-	margin-left:1.5em;
-	text-align:left;
-	display:block;
-	clear:right;
-	background-color:#F4F4F4;
-	}
+  margin-left: 1.5em;
+  text-align: left;
+  display: block;
+  clear: right;
+  background-color: #f4f4f4;
+}
 
+#formcol1 input.reqfield {
+	background:#FF9;
+}
 
 /* div for radio buttons and check boxes */
 
 #multchoice {
-	clear:left;
-	margin-left:1%;	
+  clear: left;
+  margin-left: 1%;
 }
 
-#multchoice input, #multchoice span {
-	float:left;
+#multchoice input,
+#multchoice span {
+  float: left;
 }
 
-#multchoice span {	
-	margin: 0 .3em;
-}
-
-.submit-button {
-	margin:2em 0;
-	float:right;
-	width:70%;
+#multchoice span {
+  margin: 0 0.3em;
 }
 
 
-		
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  color: #fff !important;
+  background-color: #bb3d2f !important;
+}
 
 /* end of form css */
-	
